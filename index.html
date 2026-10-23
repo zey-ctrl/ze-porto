@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Zeya</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+
+        <!-- NAVIGATION BAR -->
+        <div class="navbar">
+            <h2 class="title-navbar">Electrical &amp; Tech Portfolio</h2>
+            <div class="nav-kanan">
+                <ul class="ul-navbar">
+                    <li class="li-navbar"><a href="#content1">Home</a></li>
+                    <li class="li-navbar"><a href="#content2">About Me</a></li>
+                    <li class="li-navbar"><a href="#content3">Education</a></li>
+                    <li class="li-navbar"><a href="#content4">Skills</a></li>
+                    <li class="li-navbar"><a href="#content5">Experiences &amp; activities</a></li>
+                    <li class="li-navbar"><a href="#content6">Contact</a></li>
+                </ul>
+                <button class="btn-tema" id="btnTema" aria-label="Ganti mode gelap atau terang">☀️</button>
+            </div>
+        </div>
+        <!-- NAVIGATION BAR END -->
+
+
+        <!-- CONTENT 1 : NAMA, FOTO, TAGLINE -->
+        <div class="co-content" id="content1">
+            <div class="co-text">
+                <p class="hello-content">— HALLO THERE! I AM</p>
+                <h1 class="name-content">GHOZIYAH ALIMAH SUCIAWAN</h1>
+                <p class="desc-content">
+                    An Electrical Engineering Technology Student'26 at Universitas Gadjah Mada<br />
+                    Science & Tech Enthusiast | Interested in Renewable Energy
+                </p>
+                <a href="Https://www.linkedin.com/in/ghoziyah-alimah-suciawan-54175441b" target="_blank" class="btn-content">Click Here!</a>
+            </div>
+            <img src="PORTO.jpeg" class="img-content" />
+        </div>
+        <!-- CONTENT 1 END -->
+
+
+        <!-- CONTENT 2 : ABOUT ME -->
+        <div class="co-about" id="content2">
+            <h2>About Me</h2>
+            <p>
+                A highly motivated first-year undergraduate student in Electrical Engineering Technology at Universitas Gadjah Mada, with a strong foundation in mathematics and technical problem-solving. 
+                Actively engaged in organizational leadership, academic competitions, and research-oriented activities. Exhibits advanced communication competence, demonstrated leadership capacity, and a consistent record of effective collaboration in team-based environments, with a clear commitment to further academic and professional growth in the engineering field.
+            </p>
+        </div>
+        <!-- CONTENT 2 END -->
+
+
+        <!-- CONTENT 3 & 4 : EDUCATION + SKILL -->
+        <div class="co-eduskill">
+
+            <!-- EDUCATION (kiri) -->
+            <div class="col-edu" id="content3">
+                <h2>Education</h2>
+
+                <div class="vtimeline">
+
+                    <div class="vitem">
+                        <div class="vdot"></div>
+                        <div class="card-edu">
+                            <img src="LOGO UGM.png" class="img-logo" />
+                            <div class="edu-text">
+                                <p class="period-edu">2026 - Present</p>
+                                <h3>Universitas Gadjah Mada</h3>
+                                <p>Field of Study: D4 - Electrical Engineering Technology</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="vitem">
+                        <div class="vdot"></div>
+                        <div class="card-edu">
+                            <img src="LOGO IC.png" class="img-logo" />
+                            <div class="edu-text">
+                                <p class="period-edu">2023 - 2026</p>
+                                <h3>MAN Insan Cendekia Kota Batam</h3>
+                                <p>Field of Study: Natural Science</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SKILL (kanan) -->
+            <div class="col-skill" id="content4">
+                <h2>Skills</h2>
+
+                <button class="tab-skill aktif" onclick="tampilkan('teknis', this)">Hard Skill</button>
+                <button class="tab-skill" onclick="tampilkan('nonteknis', this)">Soft Skill</button>
+
+                <ul class="ul-skill" id="teknis">
+                    <li class="li-skill">Microsoft Office</li>
+                    <li class="li-skill">Canva</li>
+                    <li class="li-skill">Basic Programming</li>
+                </ul>
+                <ul class="ul-skill" id="nonteknis" style="display: none;">
+                    <li class="li-skill">Teamwork</li>
+                    <li class="li-skill">Public Speaking</li>
+                    <li class="li-skill">Communication</li>
+                    <li class="li-skill">Time Management</li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- CONTENT 3 & 4 END -->
+
+
+        <!-- CONTENT 5 : EXPERIENCE & ACTIVITIES -->
+        <div class="co-project" id="content5">
+            <h2>Experience &amp; Activities</h2>
+
+            <!-- ORGANIZATION (2 kotak) -->
+            <h3 class="sub-exp">Organization</h3>
+            <div class="grid-exp">
+
+                <div class="card-exp">
+                    <img src="LOGO KMTEDI.png" class="img-exp" />
+                    <div class="text-exp">
+                        <h3>KMTEDI SV UGM</h3>
+                        <p class="period-exp">2026/2027</p>
+                        <p>Division: Staff of Entrepreneurship Division</p>
+                    </div>
+                </div>
+
+                <div class="card-exp">
+                    <img src="LOGO JS.png" class="img-exp" />
+                    <div class="text-exp">
+                        <h3>JS UGM</h3>
+                        <p class="period-exp">2026/2027</p>
+                        <p>Division: Social & Community Affairs</p>
+                    </div>
+                </div>
+                <div class="card-exp">
+                    <img src="AMBALAN.png" class="img-exp" />
+                    <div class="text-exp">
+                        <h3>DEWAN AMBALAN</h3>
+                        <p class="period-exp">2024/2025</p>
+                        <p>Division: Leader of Traditions</p>
+                    </div>
+                </div>
+
+                <div class="card-exp">
+                    <img src="INSANIA.png" class="img-exp" />
+                    <div class="text-exp">
+                        <h3>ROHANI ISLAM</h3>
+                        <p class="period-exp">2024/2025</p>
+                        <p>Division: Coordinator of Tahfidz Division</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COMMITTEE EXPERIENCE (4 kotak) -->
+            <h3 class="sub-exp">Committee Experience</h3>
+            <div class="grid-exp">
+
+                <div class="card-exp">
+                    <img src="LOGO TED.png" class="img-exp" />
+                    <div class="text-exp">
+                        <h3>Tech Enthusiast Day (TED) 2026</h3>
+                        <p class="period-exp">Ongoing</p>
+                        <p>Role/Position: Competition Committee Staff</p>
+                    </div>
+                </div>
+
+                <div class="card-exp">
+                    <img src="LOGORDK.png" class="img-exp" />
+                    <div class="text-exp">
+                        <h3>Ramadhan Di Kampus UGM (RDK) 2026</h3>
+                        <p class="period-exp">Ongoing</p>
+                        <p>Role/Position: Consumption Committee Staff</p>
+                    </div>
+                </div>
+
+                <div class="card-exp">
+                    <img src="LOGO AMGALA.png" class="img-exp" />
+                    <div class="text-exp">
+                        <h3>AMGALA SQUAD</h3>
+                        <p class="period-exp">Ongoing</p>
+                        <p>Role/Position: Program & Curriculum</p>
+                    </div>
+                </div>
+
+                <div class="card-exp">
+                    <img src="INSANIA.png" class="img-exp" />
+                    <div class="text-exp">
+                        <h3>School Student Orientation (MATSAMA)</h3>
+                        <p class="period-exp">2025</p>
+                        <p>Role / Position: Vice Project Leader – Religious Affairs</p>
+                    </div>
+                </div>
+            </div>
+                        <!-- AWARDS & HONOURS -->
+            <h3 class="sub-exp">Awards &amp; Honours</h3>
+            <div class="grid-exp">
+
+                <div class="card-exp">
+                    <img src="LOGO OMI.png" class="img-exp" />
+                    <div class="text-exp">
+                        <h3>1st Place, Mathematics Olympiad</h3>
+                        <p class="period-exp">2025</p>
+                        <p>Organizer: Indonesian Madrasah Olympiad (OMI)</p>
+                        <p>Level: City Level (Batam)</p>
+                    </div>
+                </div>
+
+                <div class="card-exp">
+                    <img src="LOGOOSN.png" class="img-exp" />
+                    <div class="text-exp">
+                        <h3>8th Place, Mathematics Olympiad</h3>
+                        <p class="period-exp">2025</p>
+                        <p>Organizer: National Science Olympiad (OSN)</p>
+                        <p>Level: City Level (Batam)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CONTENT 5 END -->
+
+
+        <!-- CONTENT 6 : CONTACT -->
+        <div class="co-contact" id="content6">
+            <h2>Let's connect!</h2>
+
+            <div class="contact-row">
+
+                <!-- EMAIL -->
+                <a href="https://mail.google.com/mail/?view=cm&to=ghoziyahalimahsuciawan.g@mail.ugm.ac.id" target="_blank" class="contact-item">
+                    <img src="EMAIL.webp" class="img-contact" alt="Email" />
+                </a>
+
+                <!-- INSTAGRAM -->
+                <a href="https://www.instagram.com/ghoziyahas_" target="_blank" class="contact-item">
+                    <img src="IG.png" class="img-contact" alt="Instagram" />
+                </a>
+
+                <!-- LINKEDIN -->
+                <a href="https://www.linkedin.com/in/ghoziyah-alimah-suciawan-54175441b" target="_blank" class="contact-item">
+                    <img src="LINKEDIN.png" class="img-contact" alt="LinkedIn" />
+                </a>
+
+            </div>
+        </div>
+        <!-- CONTENT 6 END -->
+
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <p>Ghoziyah Alimah Suciawan 2026</p>
+        </div>
+        <!-- FOOTER END -->
+
+        <footer class="footerpla">
+            <p>&copy; 2026 Ghoziyah Alimah S. All rights reserved.</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
