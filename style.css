@@ -661,18 +661,155 @@ button:hover {
     }
 }
 
+/* ===== TABLET ===== */
+@media (max-width: 900px) {
+    .co-content {
+        padding: 30px;
+        gap: 24px;
+    }
+
+    .img-content {
+        width: 260px;
+        height: 330px;
+    }
+}
+
 /* ===== HP / LAYAR KECIL ===== */
 @media (max-width: 700px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    html {
+        scroll-padding-top: 130px;
+    }
+
+    /* --- navbar: baris 1 = judul + tombol tema, baris 2 = menu yang bisa digeser --- */
+    .navbar {
+        width: 94%;
+        top: 8px;
+        margin-top: 8px;
+        padding: 10px 14px;
+        border-radius: 18px;
+        gap: 6px 10px;
+    }
+
+    .title-navbar {
+        flex: 1;
+        font-size: 13px;
+        letter-spacing: 0;
+    }
+
+    .nav-kanan {
+        display: contents;
+    }
+
+    .btn-tema {
+        order: 2;
+        margin: 0;
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+    }
+
+    .ul-navbar {
+        order: 3;
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 6px 2px 8px 2px;
+        scrollbar-width: none;
+    }
+
+    .ul-navbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .li-navbar {
+        flex-shrink: 0;
+        margin: 0 6px 0 0;
+    }
+
+    .li-navbar a {
+        white-space: nowrap;
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+
+    /* --- semua kotak --- */
+    .co-content,
+    .co-about,
+    .co-eduskill,
+    .co-education,
+    .co-skill,
+    .co-project,
+    .co-contact {
+        width: 94%;
+        margin: 16px auto;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .co-about h2,
+    .co-eduskill h2,
+    .co-project h2,
+    .co-contact h2 {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    /* --- hero: foto di atas, teks di tengah --- */
     .co-content {
-        padding: 30px 24px;
+        flex-direction: column;
+        text-align: center;
+        padding: 24px 20px;
+        gap: 20px;
     }
 
-    .grid-exp {
-        grid-template-columns: 1fr;
+    .img-content {
+        order: -1;
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        aspect-ratio: 4 / 5;
     }
 
+    .co-text {
+        flex: none;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .hello-content {
+        font-size: 11px;
+        letter-spacing: 3px;
+    }
+
+    .name-content {
+        font-size: 26px;
+        overflow-wrap: anywhere;
+    }
+
+    .desc-content {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    /* --- education + skill jadi atas-bawah --- */
     .co-eduskill {
         flex-direction: column;
+        gap: 20px;
+    }
+
+    .col-edu,
+    .col-skill {
+        flex: none;
+        width: 100%;
     }
 
     .col-edu {
@@ -680,6 +817,55 @@ button:hover {
         padding-bottom: 20px;
         border-right: none;
         border-bottom: 1px solid var(--glass-border);
+    }
+
+    .tab-skill {
+        margin-bottom: 6px;
+    }
+
+    .li-skill {
+        font-size: 13px;
+        padding: 7px 13px;
+    }
+
+    /* --- experience: satu kolom --- */
+    .grid-exp {
+        grid-template-columns: 1fr;
+    }
+
+    .card-exp {
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .img-exp {
+        width: 56px;
+        height: 56px;
+    }
+
+    .text-exp h3 {
+        font-size: 14px;
+    }
+
+    .text-exp p {
+        font-size: 13px;
+    }
+
+    .sub-exp {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    /* --- contact & footer --- */
+    .contact-row {
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .footer {
+        width: 94%;
+        font-size: 12px;
+        letter-spacing: 1px;
     }
 }
 
